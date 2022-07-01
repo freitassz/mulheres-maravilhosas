@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="global.css">
+
+        <title>Aceleração PAQ</title>
+    </head>
+    <body>
+      
+        <header>
+            <h1>Aceleração PAQ</h1>
+            <h2>Vamos programar o mundo?</h2>
+        </header>
+        <section class="box-container">
+            <article class="box">
+                <p>Oi, eu sou o Gustavo</p>
+                <p>
+                    <strong> um futuro programador!</strong>
+                </p>
+            </article>
+        </section>
+
+        <section class="women">
+            <figure onclick="showModal('ada')">
+                <div class="imgMolde">
+                </div>
+                    <img src="./img/AdaLove.jpg" alt="">
+                <figcaption>
+                    Ada Lovelace
+                </figcaption>
+            </figure>
+
+            <figure onclick="showModal('hedy')">
+                <div class="imgMolde">
+                </div>
+                <img src="./img/Dorothy.jpg" alt="">
+                <figcaption>
+                    Hedy Lamarr
+                </figcaption>
+            </figure>
+
+            <figure onclick="showModal('grace')" >
+                <div class="imgMolde">
+                </div>
+                <img src="./img/GraceHopper.jpg" alt="">
+                <figcaption>
+                    Grace Hopper
+                </figcaption>
+            </figure>
+
+            <figure onclick="showModal('margareth')">
+                <div class="imgMolde">
+                </div>
+                <img src="./img/HedyLamar.jpg" alt="">
+                <figcaption>
+                   Margareth Hamitton
+                </figcaption>
+            </figure>
+
+            <figure onclick="showModal('dorothy')">
+                <div class="imgMolde">
+                </div>
+                <img src="./img/MargarethHamilton.jpg" alt="">
+                <figcaption>
+                 Dorothy Vaughan
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <footer>
+            <h4>
+                By PAQ and <a href="https://www.linkedin.com/in/raissaqueiroz/" target="_blank">Gustavo Freitas</a>
+            </h4>
+        </footer>
+
+        <div id="backdrop"></div>
+        <div  id="modal">
+           <nav class="barraCaixa">
+               <button class="buttonFecharCard" onclick="closeModal()">
+                    <img src="./svg/close.svg" alt="fechar">
+                </button>
+                <p id="nome"></p>
+            </nav>
+            <p id="bio"></p>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

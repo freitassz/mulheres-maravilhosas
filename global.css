@@ -1,0 +1,215 @@
+/* Cores Default: var(--nome-da-cor); */
+:root {
+    --dark: #2c2a2a;
+    --purple: #1FB4E9;
+    --white: #ffffff;
+    --verdeim:  #78d80b;
+}
+
+ /* Fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+/* HARD RESET (limpar as configs de formatação) */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+
+body{
+    background-color: var(--dark);
+}
+
+p{
+    color: var(--white);
+    margin-top:  1rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+header {
+    background-color: var(--purple);
+    color: var(--white);
+    padding:  40px 5%;
+}
+
+header h1{
+color: var(--white);
+font-size: 2.5rem;;
+}
+
+header h2{
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight:400;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.box{
+    min-width: 40%;
+    min-height: 120px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-style: double;
+    border-radius: 10px;
+    padding: 20px 75px;
+    border:20px 20px;
+    margin: 60px 0px;
+    color: var(--white);
+}
+
+
+
+.women figure img {
+width: 125px;
+height: 125px;
+object-fit: cover;
+border-radius: 100%;
+transition: 0,4s;
+}
+.women {
+    display: flex;
+}
+.women figure {
+    margin-left: auto;
+    margin-right: auto;
+}
+.women figcaption {
+    width: 125px;
+    text-align: center;
+    color: var(--white);
+    padding-bottom: 50px;
+    margin-bottom: 100%;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 4%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+
+footer h4 {
+    font-size: 1.2rem;
+    text-align: center;    
+}
+
+footer h4 a {
+    color: var(--purple);
+}
+
+#modal {
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: var(--white);
+    transform: translate(-50%,-50%);
+    left: 50%;
+    display: none;
+    border-radius: 20px;
+}
+
+#bio {
+    color: var(--dark);
+   padding-left: 20%;
+   padding-right: 20%;
+   position: absolute;
+   top: 50% ;
+}
+
+.buttonFecharCard {
+    position: absolute;
+    display: block;
+    right: 9px;
+    background-color: var(--purple);
+    padding: 10px;
+    margin-left: 3%;
+    margin-top: 1%;
+    transition:0.4s;
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.buttonFecharCard img {
+    filter: invert(1);
+}
+
+.buttonFecharCard:hover {
+   color: var(--dark)
+}
+
+.barraCaixa {
+    background-color: var(--purple);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+}
+
+ 
+
+#nome {
+
+  color: var(--white);
+  font-size: 30px;
+  display: block;
+    margin: 0 auto;
+    line-height: 60px;
+}
+
+
+.imgMolde{
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 100%;
+    transition: 500ms;
+    position: absolute;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.imgMolde:hover{
+    background-color: black;
+}
+
+#backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, 0.7);
+    display: none;
+}
+
+
